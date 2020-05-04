@@ -1,0 +1,503 @@
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+ body {
+   font-family: 'Manrope', sans-serif;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+ }
+
+ :root {
+   --primary-color-dark: rgba(23, 22, 26, .9);
+   --primary-color-dark-2: rgba(23, 22, 26, .8);
+   --color-blue: rgba(62, 181, 214, 1);
+   --color-blue-hover: rgb(44, 118, 139);
+   --color-green: rgba(198, 222, 98, 1);
+   --color-orange: rgba(240, 120, 24, 1);
+   --color-gray: rgba(170, 170, 170, 1);
+ }
+
+.container {
+  max-width: 980px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+ /* ============================================== */
+ /* ================Navigation==================== */
+ /* ============================================== */
+
+ nav {
+   height: 90px;
+   width: 100%;
+   background-color: #333;
+   color: #eee;
+   position: fixed;
+ }
+
+ .section {
+   padding: 2rem 0;
+ }
+ nav ul {
+   margin-top:30px;
+   margin-left: 10rem;
+ }
+
+ nav li {
+   display: inline;
+   float: left;
+ }
+ nav a {
+   display: inline-block;
+   width: 100px;
+   text-align: center;
+   text-decoration: none;
+   padding: 5px;
+   color: #eee;
+   padding: auto;
+   text-transform: uppercase;
+ }
+ nav a:hover{
+   color: var(--color-green) ;
+   font-weight: bold;
+ }
+
+ nav a#openup {
+   display: none;
+ }
+
+ #nav-logo-left {
+   margin-left: 60px;
+   margin-right: 60px;
+   float: left;
+ }
+
+ #nav-logo-left img {
+   width: 150px;
+   height: 60px;
+   padding-top: 10px;
+ }
+ /* showcase */
+ #showcase {
+   margin: 0;
+   padding: 0;
+   background: url('../img/bg.jpg') no-repeat center/cover;
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   overflow-y: hidden;
+   z-index: 2;
+   /* Move the background image position up  */
+   background-position: 100% -30%;
+ }
+
+ #showcase h1 {
+   text-align: center;
+   margin-top: 30vh;
+   font-weight: 400;
+   padding: auto;
+   text-shadow: #fff 5px 0 10px;
+
+ }
+
+ #arrow {
+   text-align: center;
+   font-size: 4rem;
+   width: 100%;
+   color: white;
+   margin-top: 2rem;
+ }
+
+ /* Services */
+ #services .services-flex-parent {
+   display: flex;
+ }
+
+ .services-box {
+   width: 44vw;
+   padding: 15px;
+ }
+
+ /* colors */
+ .services-flex-parent :first-child .font-m {
+   color: var(--color-green);
+   border-bottom: solid 1px var(--color-green);
+
+ }
+
+ .services-flex-parent :nth-child(2) .font-m {
+   color: var(--color-blue);
+   border-bottom: solid 1px var(--color-blue);
+ }
+
+ .services-flex-parent :nth-child(3) .font-m {
+   color: var(--color-orange);
+   border-bottom: solid 1px var(--color-orange);
+ }
+
+ .services-flex-parent :nth-child(4) .font-m {
+   color: var(--color-gray);
+   border-bottom: solid 1px var(--color-gray);
+ }
+
+
+ .services-box .font-desc {
+   margin-top: 20px;
+ }
+
+ .services-box img {
+   width: 55px;
+   height: 48px;
+ }
+
+ /* Technologies */
+ #technologies {
+   height: 100vh;
+   background-image: url("https://galilsoftware.com/wp-content/uploads/2020/04/ourTechnologies_bg_pic.jpg");
+   background-position: top right;
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-shadow: inset 100px 100px 250px #000, inset -100px -100px 250px #000 ;
+
+ }
+/* shadow to the background image */
+
+
+
+ .tech-flex-parent {
+   display: grid;
+   grid-template-columns: repeat(4 , 1fr);
+  }
+
+ .tech-box img {
+   width: 168px;
+   height: 180px;
+ }
+
+ .tech-box p::before {
+   content: "";
+   background-color: #fff;
+   width: 2px;
+   height: 40px;
+   position: relative;
+   display: block;
+   margin: 0px auto;
+   text-align: center;
+ }
+
+ /* Customers */
+ .customers {
+   width: 100%;
+   height: 70vh;
+   overflow-y: hidden;
+ }
+
+ .customers-flex-parent {
+   display: flex;
+   width: 100%;
+   padding:  0 auto;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   white-space: nowrap;
+
+ }
+
+ .flex-coulmn img {
+   width: 15vw;
+ }
+ .flex-coulmn{
+
+ }
+
+ /* Case studeies */
+ .case-studies {
+   padding-bottom: 40px;
+ }
+
+ .studies-flex-parent {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+ }
+
+ .studies-box {
+   display: block;
+ }
+ .studies-box .studies-box-content
+ {
+   display: grid;
+   grid-template-rows: auto;
+   width: 100%;
+   height: 500px;
+ }
+
+ .studies-box img {
+   width: 20vw;
+   float: left;
+ }
+
+ .studies-box .qoute-start {
+   width: 100%;
+   text-align: left;
+   margin-bottom: -30px;
+ }
+
+ .studies-box .qoute-end {
+   width: 100%;
+   text-align: right;
+   margin-top: -40px;
+ }
+
+ .studies-box .font-s {
+   margin-top: 10px;
+   width: 100%;
+   text-align: right;
+ }
+
+ .btn-learn-more {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   text-align: center;
+   background-color: var(--color-blue);
+    padding: .4rem 1.3rem;
+    float: right;
+   border-radius: 3px;
+ }
+
+ .btn-learn-more:hover {
+   background: var(--color-blue-hover);
+   font-weight: bold;
+ }
+
+ /* Contact */
+ .contact {
+   background: #1E242C;
+   padding-bottom: 40px;
+ }
+
+ .contact h1 {
+   color: white;
+ }
+
+ .contact form {
+   overflow: hidden;
+   padding: auto;
+ }
+
+ .contact form input, textarea {
+   display: block;
+   width: 100%;
+   outline: none;
+   border: none;
+   padding: 10px 20px;
+   font-size: 12pt;
+   margin-bottom: 3px;
+   color: var(--primary-color-dark);
+ }
+
+ .button1 {
+   background: #1E242C;
+   color: #fff;
+   height: 50px;
+   width: 200px;
+   float: right;
+   background: #1E242C;
+   text-align: center;
+   font-size: 16px;
+   text-align: center;
+   border: 1px solid white;
+   margin-top: 10px;
+   border-radius: 3px;
+ }
+
+ .button1:hover {
+   background: var(--color-green);
+   color: black;
+ }
+
+/* FOoter */
+footer #highlight {
+  padding: 20px 0 ;
+  margin: 0;
+}
+footer #highlight a {
+  color: var(--color-blue);
+}
+ /* Utility classes */
+ .bg-light {
+   background-color: #fff;
+   color: var(--primary-color-dark);
+ }
+
+ .bg-dark {
+   color: white;
+   background-color: var(--primary-color-dark);
+ }
+
+ .mb {
+   margin-bottom: 60px;
+ }
+
+ .mt {
+   margin-top: 60px;
+ }
+
+ .font-xl {
+   font-size: 5rem;
+ }
+
+ .font-lg {
+   font-size: 4rem;
+   width: 100%;
+   margin-bottom: 4rem;
+   text-transform: uppercase;
+ }
+
+ .font-m {
+   font-size: 1.6rem;
+   font-weight: 500;
+   display: block;
+   line-height: 90px;
+   /* THis tow line will display in one line */
+   white-space: nowrap;
+ }
+
+ .font-s {
+   font-size: .8rem;
+   font-weight: 300;
+ }
+
+ .font-desc {
+   font-size: 1rem;
+   float: left;
+   text-align: left;
+   line-height: 2.1rem;
+ }
+
+ .center {
+   text-align: center;
+ }
+@media screen and (max-width: 780px) {
+  /* Services */
+
+  #services .services-flex-parent, #case-studies .studies-flex-parent {
+    display:block;
+    margin-bottom: 200px;
+  }
+  #services .services-box ,#case-studies .studies-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #technologies
+  {
+    height: 120vh;
+  }
+  .tech-flex-parent {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+
+    width: 100%;
+   }
+    .customers-flex-parent {
+      display: inline;
+
+    }
+
+
+}
+ @media screen and (max-width: 1000px) {
+
+   /*  */
+   #nav-logo-left img {
+     display: none;
+   }
+   #showcase h1 {
+     margin-top: 8rem;
+     font-size: 4rem;
+   }
+   #showcase{
+     height: 70vh;
+   }
+
+
+
+.container{
+   padding: 0 1rem;
+
+}
+   /* OPEN UP */
+
+   #openup img {
+     width: 130px;
+     height: 43px;
+   }
+
+   nav {
+     height: auto;
+     border-bottom: 0;
+   }
+
+   nav ul {
+     width: 100%;
+     height: auto;
+   }
+
+   nav li {
+     width: 100%;
+     float: left;
+     position: relative;
+   }
+
+   nav a {
+     text-align: left;
+     width: 100%;
+     text-indent: 25px;
+     background: #333;
+     border-bottom: 1px solid #555;
+   }
+
+   nav a:hover {
+     background: #444;
+   }
+
+   nav a#openup:after {
+     content: "|||";
+     transform: rotate(-90deg);
+     -ms-transform: rotate(-90deg);
+     /* IE 9 */
+     -webkit-transform: rotate(-90deg);
+     /* Safari and Chrome */
+     width: 30px;
+     height: 30px;
+     display: inline-block;
+     position: absolute;
+     right: 5px;
+     top: 30px;
+   }
+
+   nav a#openup {
+     display: block;
+     background-color: #333;
+     width: 100%;
+     position: relative;
+   }
+ }
+
+ .cf:before, .cf:after {
+   content: "";
+   display: table;
+ }
+
+ .cf:after {
+   clear: both;
+ }
+
+ .cf {
+   zoom: 0;
+ }
+
+ /* For IE 6/7 (trigger hasLayout) */
